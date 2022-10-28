@@ -1,5 +1,9 @@
 <?php
-$con = mysqli_connect('utsmeilina.csziinv4kd1n.us-east-1.rds.amazonaws.com', 'admin', 'meilina23.', 'mahasiswa');
+$host='localhost';
+$user='root';
+$password='';
+$db='mahasiswa';
+$con = mysqli_connect($host, $user, $password, $db);
 if (!$con) {
   echo 'Gagal terhubung ke database';
   die;
